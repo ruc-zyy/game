@@ -36,7 +36,7 @@ public:
 
     QLabel *towerlabel[21]={new QLabel(this)};
     QList<QLabel *> t;
-    QMovie *pic=new QMovie("E:/gameone/tower4.gif");
+    QMovie *pic=new QMovie("E:/gameone 2.0/tower4.gif");
     int numoftower=0;
 
     QList<WayPoint *> m_wayPointsList;	// 在paintEvent中需要进行绘制，那个类似的foreach(xxx) xxx.draw(xxx)
@@ -49,7 +49,7 @@ QTimer *timer = new QTimer(this);
 
 QLabel *enemylabel[50]={new QLabel(this)};
 QList<QLabel *> e;
-QMovie *epic[50]={new QMovie("E:/gameone/wolf.gif")};
+QMovie *epic[50]={new QMovie("E:/gameone 2.0/wolf.gif")};
 QList<QMovie *> ep;
 int numofwolf=0;
 QList<Enemy *> enemyList() const;

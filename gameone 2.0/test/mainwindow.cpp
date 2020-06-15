@@ -21,7 +21,7 @@ for(int i=0;i<=20;i++){
 }
 for(int i=0;i<=49;i++){
     enemylabel[i]=new QLabel(this);
-    epic[i]=new QMovie("E:/gameone/wolf.gif");
+    epic[i]=new QMovie("E:/gameone 2.0/wolf.gif");
 }
 loadTowerPositions();
 addWayPoints();
@@ -41,7 +41,7 @@ MainWindow::~MainWindow()
 void MainWindow::paintEvent(QPaintEvent *){
 
     QPainter painter(this);
-    painter.drawPixmap(0,0,QPixmap("E:/gameone/map1.png"));
+    painter.drawPixmap(0,0,QPixmap("E:/gameone 2.0/map1.png"));
 
     for(int i=0;i<m_towerPositionsList.size();i++){
         m_towerPositionsList[i].draw(&painter);
@@ -68,11 +68,11 @@ if (m_gameEnded || m_gameWin)
 
 {
     if(m_gameEnded) {
-       painter.drawPixmap(QPoint(250,250),QPixmap("E:/gameone/test/defeat.png"));
+       painter.drawPixmap(QPoint(250,250),QPixmap("E:/gameone 2.0/test/defeat.png"));
     }
 else{
 
- painter.drawPixmap(QPoint(250,250),QPixmap("E:/gameone/victory.png"));
+ painter.drawPixmap(QPoint(250,250),QPixmap("E:/gameone 2.0/victory.png"));
 }
 
     return;

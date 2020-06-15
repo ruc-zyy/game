@@ -15,7 +15,7 @@ class Tower;
 class Enemy:public QObject
 {Q_OBJECT
 public:
-    Enemy(int num,WayPoint *startWayPoint, MainWindow *game, const QPixmap &sprite=QPixmap("E:/gameone/wolf.gif"));
+    Enemy(int num,WayPoint *startWayPoint, MainWindow *game, const QPixmap &sprite=QPixmap("E:/gameone 2.0/wolf.gif"));
     void draw(QPainter *painter,QLabel **enemylabel,QMovie *pic);
     void move();
     void getDamage(int damage);
